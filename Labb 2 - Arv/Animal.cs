@@ -17,7 +17,7 @@ namespace Labb_2___Arv
         public string Species { get; set; } = "Unknown";
 
         public int Age { get; set; } = 0;
-        public string Sound { get; set; }
+        public string Sound;
 
         public Animal(int age)
         {

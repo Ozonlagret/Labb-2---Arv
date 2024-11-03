@@ -8,34 +8,36 @@ namespace Labb_2___Arv
         {
             var beaver = new Beaver("Harald", 3);
 
-            Console.WriteLine("The beaver goes: " + beaver.Sound);
+            Console.WriteLine("Bävern säger: " + beaver.Sound);
 
             beaver.BuildDam();
 
             var rodent = new Rodent(5, default);
 
-            Console.WriteLine("The rodent goes: " + rodent.Sound);
+            Console.WriteLine("Gnagaren säger: " + rodent.Sound);
 
             rodent.Chew();
 
             var elephant = new Elephant(44, "Harald", 3);
 
-            Console.WriteLine("The elephant goes: " + elephant.Sound);
+            Console.WriteLine("Elefanten säger: " + elephant.Sound);
 
             elephant.EchoLocation();
 
             var bird = new Bird(86, "Harald");
 
-            Console.WriteLine("The bird goes: " + bird.Sound);
+            Console.WriteLine("Fågeln säger: " + bird.Sound);
 
             bird.StealFood();
 
             var rat = new Rat("Inga vänner, bara mat","Harald", 3);
 
-            Console.WriteLine($"The rat goes: " + rat.Sound);
+            Console.WriteLine($"Råttan säger: " + rat.Sound);
 
             rat.SpreadPlague();
-            
+
+
+            Console.WriteLine("\n\n\n");
         }
     }
 }

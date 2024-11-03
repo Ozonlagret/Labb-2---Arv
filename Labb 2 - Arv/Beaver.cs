@@ -18,7 +18,7 @@ namespace Labb_2___Arv
 
         public void BuildDam()
         {
-            Console.WriteLine("\n\"Men vafan bävrarna har ju översvämmat stället\"" +
+            Console.WriteLine("\"Men vafan bävrarna har ju översvämmat stället\"" +
                 "\n - En ledsen vandrare \n\n");
         }
     }

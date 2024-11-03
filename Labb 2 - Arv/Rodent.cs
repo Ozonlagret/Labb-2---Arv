@@ -14,7 +14,7 @@
 
         public void Chew()
         {
-            Console.WriteLine("\"Den jäveln har tuggat hål i väggen\"\n\n");
+            Console.WriteLine("\"Du Britt-Marie det är hål i väggen här borta\"\n\n");
         }
     }
 }
