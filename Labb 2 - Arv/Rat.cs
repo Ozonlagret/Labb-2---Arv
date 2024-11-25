@@ -8,12 +8,12 @@ namespace Labb_2___Arv
 {
     internal class Rat : Rodent
     {
-        public string HasFriends { get; set; }
+        public bool HasFriends { get; set; } = default;
 
-        public Rat(string friends, string name, int age) : base(age, name)
+        public Rat(bool friends, string name, int age) : base(age, name)
         {
             HasFriends = friends;
-            Sound = "Matlagning är min passion\n";
+            Sound = "Jag tror soppan behöver persilja\n";
         }
 
         public void SpreadPlague()

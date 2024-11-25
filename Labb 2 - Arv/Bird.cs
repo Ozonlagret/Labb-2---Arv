@@ -15,12 +15,12 @@ namespace Labb_2___Arv
         public Bird(int age, string name) : base(age)
         {
             Name = name;
-            Sound = "ÄR DET DÄR GRATISMAT JAG SPANAR!?!?\n";
+            Sound = "Nämen titta, gratismat!\n";
         }
 
         public void StealFood()
         {
-            Console.WriteLine("*Svischar ner och norpar åt sig en hel churro*\n\n");
+            Console.WriteLine("*Svischar ner och norpar åt sig någons churro*\n\n");
         }
     }
 }

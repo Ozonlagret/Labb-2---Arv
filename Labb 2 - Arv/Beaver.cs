@@ -8,18 +8,16 @@ namespace Labb_2___Arv
 {
     public class Beaver : Rodent
     {
-        public bool CanSwim { get; set; } = default;
+        public bool CanSwim { get; set; } = true;
 
         public Beaver(string name, int age) : base(age, name)
         {
-            CanSwim = true;
-            Sound = "BRRRRRRRRRRRRRRRRRRRRRRRRRRRR\n";
+            Sound = "*Motorsågsljud*\n";
         }
 
         public void BuildDam()
         {
-            Console.WriteLine("\"Men vafan bävrarna har ju översvämmat stället\"" +
-                "\n - En ledsen vandrare \n\n");
+            Console.WriteLine("\"Vi får gå någon annanstans, bävrarna har översvämmat stället\" \n\n");
         }
     }
 }

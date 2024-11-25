@@ -30,14 +30,14 @@ namespace Labb_2___Arv
 
             bird.StealFood();
 
-            var rat = new Rat("Inga vänner, bara mat","Harald", 3);
+            var rat = new Rat(true,"Harald", 3);
 
             Console.WriteLine($"Råttan säger: " + rat.Sound);
 
             rat.SpreadPlague();
 
 
-            Console.WriteLine("\n\n\n");
+            Console.WriteLine("\n\n\n"); 
         }
     }
 }
