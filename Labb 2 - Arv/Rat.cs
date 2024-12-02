@@ -10,10 +10,10 @@ namespace Labb_2___Arv
     {
         public bool HasFriends { get; set; } = default;
 
-        public Rat(bool friends, string name, int age) : base(age, name)
+        public Rat(string name, int age, double weight, string species, string sound, bool friends, double bottomIncisors) : base(name, age, weight, species, sound, bottomIncisors)
         {
             HasFriends = friends;
-            Sound = "Jag tror soppan behöver persilja\n";
+            Sound = sound;
         }
 
         public void SpreadPlague()

@@ -8,21 +8,25 @@ namespace Labb_2___Arv
 {
     public class Animal
     {
-        public string Domain { get; set; } = "Unknown";
-        public string Kingdom { get; set; } = "Unknown";
-        public string Phylum { get; set; } = "Unknown";
-        public string Class_ { get; set; } = "Unknown";
-        public string Order { get; set; } = "Unknown";
-        public string Family { get; set; } = "Unknown";
-        public string Species { get; set; } = "Unknown";
+        public string Domain { get; set; } = "Okänt";
+        public string Kingdom { get; set; } = "Okänt";
+        public string Phylum { get; set; } = "Okänt";
+        public string Class_ { get; set; } = "Okänt";
+        public string Order { get; set; } = "Okänt";
+        public string Family { get; set; } = "Okänt";
+        public string Species { get; set; } = "Okänt";
 
         public int Age { get; set; } = 0;
-        public string Sound;
+        public string Sound { get; set; } = "Okänt";
+        public string Name { get; set; } = "Okänt";
+        public double Weight { get; set; } = default;
 
-        public Animal(int age)
+        public Animal(string name, int age, double weight, string species, string sound)
         {
             Age = age;
-            Sound = String.Empty;
+            Sound = sound;
+            Name = name;
+            Weight = weight;
         }
 
         public void Taxonomy(string animal)

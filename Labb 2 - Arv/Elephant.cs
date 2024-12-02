@@ -10,13 +10,13 @@ namespace Labb_2___Arv
     {
         public string Name { get; set; } = String.Empty;
 
-        public int Weight { get; set; } = default;
+        public double TuskLength { get; set; } = default;
 
-        public Elephant(int age, string name, int weight) : base(age)
+        public Elephant(string name, int age, double weight, string species, string sound, double tuskLength) : base(name, age, weight, species, sound)
         {
             Name = name;
-            Sound = "*Trumpetsolo*\n";
-            Weight = weight;
+            Sound = sound;
+            TuskLength = tuskLength;
         }
 
         public void EchoLocation()

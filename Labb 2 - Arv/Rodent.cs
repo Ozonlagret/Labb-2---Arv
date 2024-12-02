@@ -4,12 +4,13 @@
     {
         public string Name { get; set; } = String.Empty;
 
-        public int BottomIncisorsMilli { get; set; }
+        public double BottomIncisorsLength { get; set; }
 
-        public Rodent(int age, string name) :base(age)
+        public Rodent(string name, int age, double weight, string species, string sound, double bottomIncisors) :base(name, age, weight, species, sound)
         {
             Name = name;
-            Sound = "Squeak\n";
+            Sound = sound;
+            BottomIncisorsLength = bottomIncisors;
         }
 
         public void Chew()

@@ -9,10 +9,12 @@ namespace Labb_2___Arv
     public class Beaver : Rodent
     {
         public bool CanSwim { get; set; } = true;
+        public string FurColor { get; set; } = String.Empty;
 
-        public Beaver(string name, int age) : base(age, name)
+        public Beaver(string name, int age, double weight, string species, string sound, double bottomIncisors) : base(name, age, weight, species, sound, bottomIncisors)
         {
-            Sound = "*Motorsågsljud*\n";
+            Sound = sound;
+            FurColor = "brun";
         }
 
         public void BuildDam()

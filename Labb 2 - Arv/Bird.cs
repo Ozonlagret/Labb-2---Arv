@@ -10,12 +10,13 @@ namespace Labb_2___Arv
     {
         public string Name { get; set; } = String.Empty;
 
-        public string FeatherColors { get; set; } = String.Empty;
+        public string FeatherColor { get; set; } = String.Empty;
 
-        public Bird(int age, string name) : base(age)
+        public Bird(string name, int age, double weight, string species, string sound, string featherColor) : base(name, age, weight, species, sound)
         {
+            Sound = sound;
             Name = name;
-            Sound = "Nämen titta, gratismat!\n";
+            FeatherColor = featherColor;
         }
 
         public void StealFood()
